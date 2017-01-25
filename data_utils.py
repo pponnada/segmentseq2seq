@@ -343,6 +343,17 @@ def prepare_block_sequences(datadir="dataset", trace_file="Financial1.spc", voca
         sequence_count += 1
     return blocks_vocab, block2idx, idx2block, sequence_count
   else:
+    # Perhaps a bzip compressed version of the file exists? Check for it
+    bzipd_block_sequences_filename = block_sequences_filename + ".bz2"
+    bzipd_block_sequences_posix_file = Path(bzipd_block_sequences_filename)
+    if bzipd_block_sequences_posix_file.exists():
+      decompress_file(bzipd_block_sequences_filename, block_sequences_filename)
+      print("{} now exists. Reusing ..".format(block_sequences_filename))
+      with open(block_sequences_filename, 'r') as bsf:
+        for _ in bsf:
+          sequence_count += 1
+      return blocks_vocab, block2idx, idx2block, sequence_count
+
     print("{}  does not exist. Creating ..".format(block_sequences_filename))
     asu_file_count = 24
     file_not_found = False
