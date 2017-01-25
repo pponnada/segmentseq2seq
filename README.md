@@ -16,5 +16,9 @@ Data is stored in the datasets directory. If the file `Financial1.spc` file is n
 To train the model edit the file `predict.py` so as to make `train_model = True`. 
 
 ## Prediction
-To predict a sequence of block offsets, edit the file `predict.py` so as to make `train_model = False`. A random sequence of blocks of size batch size from the test data will be input to the model for it make its predictions. A corresponding plot of predicted v/s actual sequence of blocks with a file name `predict-*freq-*win-*.png` will be saved in the parent directory.
+To predict a sequence of block offsets, edit the file `predict.py` so as to make `train_model = False`. A random sequence of blocks of size batch size from the test data will be input to the model for it make its predictions. A corresponding plot of predicted v/s actual sequence of blocks with a file name `predict-*freq-*win-*.png` will be saved in the parent directory. Depending upon the hyperparameters, number of epochs chosen and the data drawn randomly from the test input, a plot similar to the one below will be generated.
+
+![predictions](https://raw.githubusercontent.com/pponnada/segmentseq2seq/plots/predict-1024freq-5win-64.png)
+
+
 
