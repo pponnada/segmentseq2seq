@@ -1,0 +1,6 @@
+model_checkpoint_path: "Financial1segmentseq_model.ckpt-60"
+all_model_checkpoint_paths: "Financial1segmentseq_model.ckpt-56"
+all_model_checkpoint_paths: "Financial1segmentseq_model.ckpt-57"
+all_model_checkpoint_paths: "Financial1segmentseq_model.ckpt-58"
+all_model_checkpoint_paths: "Financial1segmentseq_model.ckpt-59"
+all_model_checkpoint_paths: "Financial1segmentseq_model.ckpt-60"

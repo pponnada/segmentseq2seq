@@ -13,10 +13,10 @@ win_size_ms = 64
 segment_size = 1024
 fname = 'Financial1.spc'
 batch_size = 512
-emb_dim = 64
-epochs = 15
-num_layers = 3
-train_model = True
+emb_dim = 128
+epochs = 100
+num_layers = 5
+train_model = False
 
 maybe_download(datadir='datasets', fname=fname, url=origin)
 _, block2idx, idx2block, _ = prepare_block_sequences(datadir="datasets", trace_file=fname, vocab_freq=vocab_freq, max_win_ms = win_size_ms, segment_size=segment_size)
