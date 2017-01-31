@@ -3,7 +3,7 @@ Multi-layer Sequence to Sequence Recurrent Neural Networks for storage block mod
 
 This code implements a multi-layer Sequence to Sequence Recurrent Neural Network for training and predicting a sequence of block offsets given an input of sequence of block offsets. To train the model, an input file with a sequence of block offsets and a labels file with the corresponding block offsets (to be predicted) are input the model. 10% of the data from the trace file is held out as test data to predict block accesses.
 
-OLTP block storage traces for training this model have been downloaded from [umass website](http://traces.cs.umass.edu/index.php/Storage/Storage). Details of the traces and preprocessing performed on the traces are descrived in a separate [blog](https://pponnada.github.io/2017/01//27/storage-segment-prediction.html) post. 
+OLTP block storage traces for training this model have been downloaded from [umass website](http://traces.cs.umass.edu/index.php/Storage/Storage). Details of the traces and preprocessing performed on the traces are descrived in a separate [blog](https://pponnada.github.io/jekyll/update/2017/01/27/storage-segment-prediction.html) post. 
 
 # Requirements
 This code is written in python 3.5 and requires [Tensorflow] (https://www.tensorflow.org/get_started/os_setup). I trained this model on 64 bit Ubuntu, Tensorflow 12.1 with GPU support. 
