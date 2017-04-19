@@ -1,5 +1,5 @@
 # segmentseq2seq
-Multi-layer Sequence to Sequence Recurrent Neural Networks for storage block models in Tensorflow
+Multi-layer Sequence to Sequence Recurrent Neural Networks for storage block models in Tensorflow. See https://pponnada.github.io/jekyll/update/2017/01/27/storage-segment-prediction.html for more details.
 
 This code implements a multi-layer Sequence to Sequence Recurrent Neural Network for training and predicting a sequence of block offsets given an input of sequence of block offsets. To train the model, an input file with a sequence of block offsets and a labels file with the corresponding block offsets (to be predicted) are input the model. 10% of the data from the trace file is held out as test data to predict block accesses.
 
